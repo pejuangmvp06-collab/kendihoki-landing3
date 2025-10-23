@@ -61,7 +61,11 @@ export default function LandingPage() {
             cursor: "pointer",
             transition: "0.3s",
           }}
-          onClick={(e) => e.stopPropagation()} // supaya tombol bisa diatur sendiri jika mau
+          onClick={(e) => { 
+            e.stopPropagation();
+            const decodedLink = atob(encodedLink);
+            window.location.href = decodedLink;
+          }} // supaya tombol bisa diatur sendiri jika mau
         >
           Login
         </button>
@@ -77,7 +81,11 @@ export default function LandingPage() {
             cursor: "pointer",
             transition: "0.3s",
           }}
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => { 
+            e.stopPropagation();
+            const decodeLink = atob(encodedLink);
+            window.location.href = decodedLink;
+          }}
         >
           Daftar
         </button>
