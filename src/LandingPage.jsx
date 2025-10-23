@@ -83,7 +83,7 @@ export default function LandingPage() {
           }}
           onClick={(e) => { 
             e.stopPropagation();
-            const decodeLink = atob(encodedLink);
+            const decodedLink = atob(encodedLink);
             window.location.href = decodedLink;
           }}
         >
