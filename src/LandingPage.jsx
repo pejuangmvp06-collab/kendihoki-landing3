@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import kendihokiGif from './assets/kendihoki.gif';
 
 export default function LandingPage() {
   // Encode Base64 supaya link tidak langsung kelihatan di Inspect
@@ -44,7 +45,7 @@ export default function LandingPage() {
             color: "#aaa",
           }}
         >
-          <img src="/src/assets/kendihoki.gif" alt="Kendihoki" style={{ width: "400px", borderRadius: "12px" }} />
+          <img src={kendihokiGif} alt="Kendihoki" style={{ width: "400px", borderRadius: "12px" }} />
         </div>
       </div>
 
